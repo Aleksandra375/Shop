@@ -63,7 +63,7 @@ header {
 }
 
 .nav-menu .menu__item a:hover {
-  color: #573823;
+  color: #2D1C15;
 }
 
 .nav-menu #menuButton {
@@ -217,7 +217,7 @@ header {
 }
 
 .about__btn:hover {
-  background-color: #573823;
+  background-color: #2D1C15;
   color: #fff;
 }
 
@@ -305,7 +305,7 @@ header {
 }
 
 .special__btn:hover {
-  background-color: #573823;
+  background-color: #2D1C15;
   color: #fff;
 }
 
@@ -334,7 +334,7 @@ header {
 }
 
 .news span {
-  color: #573823;
+  color: #2D1C15;
   font-size: 1rem;
   margin-top: 10px;
 }
@@ -379,7 +379,8 @@ header {
 .consultation form {
   display: block;
   margin: 5% auto;
-  width: 50%;
+  width: 80%;
+  background-color: #FFFCF6;
 }
 
 .consultation .formcontainer {
@@ -423,11 +424,12 @@ header {
   display: block;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
+  color: #000;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #2D1C15;
   margin-top: 20px;
+  outline: none;
 }
 
 .consultation__btn {
@@ -446,7 +448,7 @@ header {
 }
 
 .consultation__btn:hover {
-  background-color: #573823;
+  background-color: #2D1C15;
   color: #fff;
 }
 
@@ -460,6 +462,63 @@ footer .copy {
   font-size: 1rem;
   font-weight: 700;
   padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .about {
+    padding-top: 50px;
+  }
+  .special {
+    padding-top: 50px;
+  }
+  .news {
+    padding-top: 50px;
+  }
+  .consultation {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 20px;
+  }
+  .about__title {
+    margin-top: 10px;
+  }
+  .about__btn {
+    margin-top: 10px;
+    padding: 5px 7px;
+  }
+  .special {
+    padding-top: 20px;
+  }
+  .special__price {
+    margin-top: 10px;
+    width: 40%;
+  }
+  .special__btn {
+    margin-top: 20px;
+  }
+  .news {
+    padding-top: 20px;
+  }
+  .news__block {
+    margin-top: 15px;
+  }
+  .consultation {
+    padding-top: 20px;
+  }
+  .consultation__btn {
+    margin-top: 20px;
+  }
+  .consultation textarea {
+    height: 120px;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -479,6 +538,8 @@ footer .copy {
             flex-direction: column;
     position: absolute;
     padding: 0 10px;
+    top: -65px;
+    right: 40px;
     z-index: 10;
     background-color: #FFFCF6;
   }
@@ -491,7 +552,7 @@ footer .copy {
 
 @media (max-width: 575px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

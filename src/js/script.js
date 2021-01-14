@@ -15,10 +15,27 @@ $(document).ready(function(){
         menu.classList.toggle('d-block');
     });
 
-    // menuItem.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         hamburger.classList.toggle('hamburger_active');
-    //         menu.classList.toggle('menu_active');
-    //     })
-    // })
+    
+    $('.feed-form').validate({
+        rules: {
+            name: "required",
+            message: "required",
+            email: {
+                required: true,
+                email: true
+              }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите Ваше имя!"
+            },
+            message: {
+                required: "Пожалуйста, введите сообщение"
+            },
+            email: {
+              required: "Пожалуйста, введите Ваш почтовый адрес!",
+              email: "Неправильно введён адрес почты!"
+            }
+        }
+    });
 });
